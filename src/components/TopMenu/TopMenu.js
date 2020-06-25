@@ -5,28 +5,22 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import About from "./About";
-import Topics from "./Topics";
-import Home from "./Home";
-import "./Menu.css";
+import About from "../Common/About";
+import Topics from "../Topic/Topics";
+import Home from "../Home/Home";
 
-export default function Menu() {
+import Product from "../Products/Product";
+import NavBar from "../NavBar/NavBar";
+
+export default function TopMenu() {
   return (
     <Router>
       <div className="menu">
-        <ul className="menu-link">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-        </ul>
-
+        <NavBar />
         <Switch>
+          <Route path="/product">
+            <Product />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
