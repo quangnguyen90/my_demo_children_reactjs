@@ -4,35 +4,19 @@ import './App.css';
 import Accordion from './components/Accordion';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Accordion heading="Product Menu">
-        <div className="product-menu">
+      <Menu />
+      <Accordion heading="Company Info">
+        <div className="company-info">
           <ul>
-            <li>List</li>
-            <li>Add</li>
-            <li>Backup</li>
-          </ul>
-        </div>
-      </Accordion>
-      <Accordion heading="Customer Menu">
-        <div className="customer-menu">
-          <ul>
-            <li>List</li>
-            <li>Add</li>
-            <li>Backup</li>
-          </ul>
-        </div>
-      </Accordion>
-      <Accordion heading="Store Menu">
-        <div className="store-menu">
-          <ul>
-            <li>List</li>
-            <li>Add</li>
-            <li>Backup</li>
+            <li>Goals</li>
+            <li>Objective</li>
+            <li>Future</li>
           </ul>
         </div>
       </Accordion>
