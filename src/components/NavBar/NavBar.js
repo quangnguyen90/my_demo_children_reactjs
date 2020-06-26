@@ -40,6 +40,16 @@ const NavBar = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink>
+                                <Link to="/hoc">Hoc</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
+                                <Link to="/normal">Not HOC</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
                                 <Link to="/about">About</Link>
                             </NavLink>
                         </NavItem>
