@@ -16,6 +16,7 @@ import NotHoc from "../AwsomeImg/NotHoc";
 import RenderProps from "../RenderProps/RenderProps";
 import Context from "../Context/Context";
 import ShowTrafficLight from "../TrafficLight/ShowTrafficLight";
+import FuncSetState from "../SetState/FuncSetState";
 
 export default function TopMenu() {
   return (
@@ -46,6 +47,9 @@ export default function TopMenu() {
           </Route>
           <Route path="/context">
             <Context />
+          </Route>
+          <Route path="/func-set-state">
+            <FuncSetState />
           </Route>
           <Route path="/">
             <Home />

@@ -75,6 +75,11 @@ const NavBar = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink>
+                                <Link to="/func-set-state">Func setState</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
                                 <Link to="/about">About</Link>
                             </NavLink>
                         </NavItem>
