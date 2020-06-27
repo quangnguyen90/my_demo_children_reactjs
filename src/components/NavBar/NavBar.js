@@ -50,6 +50,11 @@ const NavBar = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink>
+                                <Link to="/render-props">Render Props</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
                                 <Link to="/about">About</Link>
                             </NavLink>
                         </NavItem>
