@@ -18,6 +18,7 @@ import Context from "../Context/Context";
 import ShowTrafficLight from "../TrafficLight/ShowTrafficLight";
 import FuncSetState from "../SetState/FuncSetState";
 import FuncUseState from "../UseState/FuncUseState";
+import FuncUseContext from "../UseContext/FuncUseContext";
 
 export default function TopMenu() {
   return (
@@ -54,6 +55,9 @@ export default function TopMenu() {
           </Route>
           <Route path="/func-use-state">
             <FuncUseState />
+          </Route>
+          <Route path="/func-use-context">
+            <FuncUseContext />
           </Route>
           <Route path="/">
             <Home />
