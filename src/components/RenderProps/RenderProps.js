@@ -2,7 +2,8 @@ import React from 'react';
 import List from './List';
 import Counter from './Counter';
 
-const data = ['A', 'B', 'C']
+const data = ['A', 'B', 'C'];
+
 function RenderProps(props) {
     return (
         <div className="RenderProps">

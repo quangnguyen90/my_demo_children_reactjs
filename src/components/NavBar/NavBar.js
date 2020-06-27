@@ -55,6 +55,11 @@ const NavBar = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink>
+                                <Link to="/context">Context</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
                                 <Link to="/about">About</Link>
                             </NavLink>
                         </NavItem>
