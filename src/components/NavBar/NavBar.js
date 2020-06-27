@@ -80,6 +80,11 @@ const NavBar = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink>
+                                <Link to="/func-use-state">Hook useState</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
                                 <Link to="/about">About</Link>
                             </NavLink>
                         </NavItem>
