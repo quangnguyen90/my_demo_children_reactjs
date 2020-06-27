@@ -5,12 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Common/Header';
 import Footer from './components/Common/Footer';
 import TopMenu from './components/TopMenu/TopMenu';
+import CartProvider from './components/ProductContext/Cart';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <TopMenu />
+      <CartProvider>
+        <TopMenu />
+      </CartProvider>
       <Footer />
     </div>
   );

@@ -11,6 +11,7 @@ import {
 } from 'reactstrap';
 
 import { Link, } from "react-router-dom";
+import { CartContext } from '../ProductContext/Cart';
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,6 +32,15 @@ const NavBar = (props) => {
                         <NavItem>
                             <NavLink>
                                 <Link to="/product">Product</Link>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink>
+                                <CartContext.Consumer>
+                                    {({ cartItems }) => (
+                                        <Link to="/product">Cart ({cartItems.length})</Link>
+                                    )}
+                                </CartContext.Consumer>
                             </NavLink>
                         </NavItem>
                         <NavItem>
