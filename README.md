@@ -4,3 +4,6 @@
 * props.children
 * CRUD with dummy API
 * Render Props
+* Context
+* classname
+* Higher Order Component
