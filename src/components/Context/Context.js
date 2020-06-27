@@ -1,16 +1,21 @@
 import React from 'react';
-
-const NumberContext = React.createContext();
+import NumberProvider from './NumberProvider';
+import NumberContext from './Contexts/NumberContext';
 
 function Context(props) {
     return (
-        <NumberContext.Provider value={5}>
-            <div className="RenderProps">
+        <NumberProvider>
+            <div className="context">
                 <NumberContext.Consumer>
-                    {(context) => <h2>{context}</h2>}
+                    {({ number, updateNumber }) => (
+                        <div>
+                            <h2>{number}</h2>
+                            <button onClick={updateNumber}>Update Number</button>
+                        </div>
+                    )}
                 </NumberContext.Consumer>
             </div>
-        </NumberContext.Provider >
+        </NumberProvider>
     );
 }
 
